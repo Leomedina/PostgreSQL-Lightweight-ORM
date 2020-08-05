@@ -37,23 +37,36 @@ app.get("/", async function (req, res, next) {
 
 ```
 
-## Methods
+## BUGS
+<strong>SQL-Injections:</strong> Currently, we are handling SQL-injections on external requests but they are not handled when you create a model/table class.
 
-Collection of flexible methods for the model
+## Versions
 
-Class Methods:
+(live) 0.5.1 - First working version
 
-CRUD:
- -> get            - retrieves single item from database.
- -> findAll        - retrieves all items from database or items matching query.
- -> create         - Creates a new item in the database.
- -> update         - Updates item in the database.
- -> delete         - Deletes item in the database.
+(TBD) 1.0.0 - Will better organize the code and handle SQL-injections when creating the classes.
 
-Helper functions:
- -> WhereExpressions     - creates where expressions depending on query passed
- -> createquery          - creates SQL queries.
- -> partialupdatequery   - creates queries for update
+## Methods 
+
+<strong>Class Methods (Use these):</strong>
+
+-> get: retrieves single item from database.
+
+-> findAll: retrieves all items from database or items matching query.
+
+-> create: Creates a new item in the database.
+
+-> update: Updates item in the database.
+
+-> delete: Deletes item in the database.
+
+<strong>Helper functions:</strong>
+
+-> WhereExpressions: creates where expressions depending on query passed.
+
+-> createquery: creates SQL queries.
+
+-> partialupdatequery: creates queries for update
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
