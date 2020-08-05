@@ -4,7 +4,7 @@ lightweight-pg-orm is built on top of pg and helps you easily create CRUD functi
 
 ## Installation
 
-Use npm [npm](https://www.npmjs.com/get-npm) to install.
+Use [npm](https://www.npmjs.com/get-npm) to install.
 
 ```bash
 npm install lightweight-pg-orm
