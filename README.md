@@ -1,6 +1,6 @@
 # lightweight-pg-orm
 
-lightweight-pg-orm is built on top of pg and helps you easily create CRUD functions on your PostgreSQL database.
+lightweight-pg-orm is built on top of pg, Node, and Express to help you easily create CRUD functions on your PostgreSQL database.
 
 ## Installation
 
