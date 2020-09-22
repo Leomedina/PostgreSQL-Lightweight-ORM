@@ -34,7 +34,40 @@ app.get("/", async function (req, res, next) {
     return next(error);
   };
 });
+```
 
+App.js must include a global variable for the root directory. Example below
+```javascript
+global.__basedir = __dirname;
+
+const express = require('express');
+const app = express();
+
+/** Routes */
+app.get('/', function (req, res, next) {
+  return res.status(200).json({
+    'status': 200,
+    'item': "This is the homepage, nothing to see here.",
+  })
+});
+
+/** 404 Error Handler */
+app.use(function (req, res, next) {
+  const error = new ExpressError('Page Not Found', 404);
+  return next(error);
+});
+
+/** Error Handler */
+app.use(function (err, req, res, next) {
+  res.status = err.status || 500;
+
+  return res.json({
+    status: res.status,
+    message: err.message
+  });
+});
+
+module.exports = app;
 ```
 
 ## BUGS
