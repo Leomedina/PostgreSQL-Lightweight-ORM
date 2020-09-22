@@ -1,6 +1,6 @@
 {
   "name": "lightweight-pg-orm",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Lightweight node package that helps you manage your PostgreSQL database.",
   "main": "model.js",
   "directories": {
@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/Leomedina/PostgreSQL-Lightweight-ORM#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
     "pg": "^8.3.0"
   }
 }
