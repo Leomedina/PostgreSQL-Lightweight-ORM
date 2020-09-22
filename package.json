@@ -1,6 +1,6 @@
 {
   "name": "lightweight-pg-orm",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "Lightweight node package that helps you manage your PostgreSQL database.",
   "main": "lib/model.js",
   "directories": {
